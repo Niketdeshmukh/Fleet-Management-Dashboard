@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar {
+  width: 15%;
+  min-width: 180px;
+  background: linear-gradient(135deg, #3b82f6, #9333ea);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1em;
+  color: #fff;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1em;
+}
+
+.main-content {
+  width: 85%;
+  padding: 2em;
+}
+
+.add-vehicle, .dashboard {
+  width: 100%;
+}
+/* Add Vehicle Form Styles */
+.add-vehicle {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 70%;
+  margin: 20px auto;
   color: white;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.App-link {
-  color: #61dafb;
+.add-vehicle h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #fff;
+  font-size: 24px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-vehicle label {
+  display: block;
+  margin-bottom: 10px;
+  color: #d1e1ff;
+  font-weight: bold;
+}
+
+.add-vehicle input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.add-vehicle input[type="text"],
+.add-vehicle input[type="number"] {
+  background: #f2f2f2;
+  color: #333;
+}
+
+.add-vehicle button {
+  width: 50%;
+  padding: 12px;
+  display: flex;
+    justify-content: center;
+    /* margin: auto; */
+  border: none;
+  border-radius: 4px;
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-vehicle button:hover {
+  background-color: #ff4757;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+form label {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+form input {
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.vehicle-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.vehicle-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: black;
+  font-weight: 600;
+
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.vehicle-list li span {
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.vehicle-list button {
+  padding: 5px 10px;
+  color: #fff;
+  width: 7rem;
+  background-color: #e63946;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.vehicle-list button:hover {
+  background-color: #d32f2f;
 }

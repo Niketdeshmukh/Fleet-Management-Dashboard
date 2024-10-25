@@ -1,0 +1,59 @@
+.charging-schedule {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  
+  .vehicle-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    width: calc(33.33% - 20px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .vehicle-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .vehicle-info {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .status-control {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .status-control label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+  }
+  
+  .status-select {
+    padding: 5px;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .vehicle-status {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+  }
+  
